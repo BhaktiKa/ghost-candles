@@ -98,6 +98,7 @@ def main() -> None:
     stats = {
         "Oracle": fc.backend,
         "Narrator": medium.name,
+        "Story drafts rejected by fact check": f"{sum(1 for e in medium.log if e['problems'])} of {len(medium.log)}",
         "Out-of-sample days": n,
         "Walk-forward": f"train on previous {a.window} days, refit every {a.step}",
         "Oracle runtime (s)": f"{fc.seconds:.0f}",
