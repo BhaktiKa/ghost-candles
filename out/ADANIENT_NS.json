@@ -1,7 +1,7 @@
 {
   "stats": {
     "Oracle": "tabpfn-v3.5-fast",
-    "Narrator": "ollama:gemma3:1b",
+    "Narrator": "ollama:gemma3:4b",
     "Out-of-sample days": 671,
     "Walk-forward": "train on previous 750 days, refit every 20",
     "Oracle runtime (s)": "662",
@@ -13,7 +13,8 @@
     "Quantile loss x1e4, bell curve": "36.519",
     "Ghosts (odds <= 1 in 100), oracle": 4,
     "Ghosts expected by pure chance": "6.7",
-    "Ghosts by bell curve": 24
+    "Ghosts by bell curve": 24,
+    "Story drafts rejected by fact check": "6 of 8"
   },
   "ghosts": [
     {
@@ -31,7 +32,8 @@
       "prev5_pct": -2.829186382524962,
       "close": 2181.592529296875,
       "klass": "Wraith",
-      "story": "The record: The ADANIENT.NS ticker displayed a plummet of -22.61%, a deviation far exceeding the model\u2019s 98% predicted range. The model\u2019s narrow probability of such a drastic shift \u2013 a mere 1 in 1,000 \u2013 suggested a chaotic, unpredictable factor. Volume, a staggering 19.8x the 20-day average, spiked during the event. The previous five days saw a consistent, if subtle, decline, a chilling pattern mirroring a slow, spectral descent.  The data felt\u2026wrong, like the stock\u2019s narrative was subtly shifting, pulled by an unseen current."
+      "story": "The chart of Adanient.NS writhed like a skeletal hand, each candlestick a restless walker attempting to cross the threshold. The lines pulsed with a sickly green light, reflecting off the frozen order book \u2013 a cathedral of cold, silent numbers. It smelled of damp wool and something metallic. \n\nA chill, deeper than the November air, permeated the room. The volume surged, a tidal wave of 19.8x the normal flow, yet the movement\u2026 the movement was grotesque. The candle, a fractured thing of obsidian, plummeted. The model, a pale imitation of prediction, shuddered with an impossibility. Its range, -9.92% to +8.98%, seemed a laughable constraint. The odds of such a shift were a nightmare \u2013 1 in 1,000+, a billion in a bell curve. The air thickened with the weight of unseen calculations. \n\nThe record: -22.61% on 2024-11-21, with a model\u2019s odds of approximately 1 in 1,000+ that the move would occur.",
+      "story_source": "gemma3:4b (attempt 1)"
     },
     {
       "ticker": "ADANIENT.NS",
@@ -48,7 +50,8 @@
       "prev5_pct": -3.1068599899613836,
       "close": 1863.3668212890625,
       "klass": "Poltergeist",
-      "story": "The record: The ADANIENT.NS stock plummeted, a single negative percentage point, yet the model predicted an extreme range of -7.13% to +6.41%. The volume spiked, reaching 8.6 times the 20-day average, a chaotic surge. The previous five days had been consistently negative, a slow, unsettling decline. The model\u2019s initial assessment suggested a localized anomaly, a fluctuation in the data that defied standard analysis. It seemed the stock was responding to something unseen, a subtle shift in its internal state."
+      "story": "On Friday, 2026-01-23, ADANIENT.NS fell 10.65%. Everything the past knew said the day should end between -7.13% and +6.41%. It didn't. Volume ran at 8.6x normal, as if something was moving through the order book that nobody could see.\nThe record: a -10.65% day the model rated about 1 in 111.",
+      "story_source": "template (model failed the fact check)"
     },
     {
       "ticker": "ADANIENT.NS",
@@ -65,7 +68,8 @@
       "prev5_pct": -0.09205060605854508,
       "close": 3010.0,
       "klass": "Poltergeist",
-      "story": "The record: The trading firm\u2019s screens flickered with a static that mirrored the unsettling stillness of the warehouse. It had been a single, relentless drop \u2013 a slow, deliberate descent. The model, a pale, rectangular ghost, had predicted this \u2013 a divergence so profound, it defied probability.  The 98% range, a whispered lie, suggested a convergence to a point just shy of the predicted threshold.  The volume, unusually high for a Thursday, suggested a frantic, desperate attempt to maintain balance.  The logs showed a single, repeated sequence of numbers \u2013 23, 23, 23, 23, 23.  It was a pattern, an echo within the data, that seemed to pulse with a cold, ancient rhythm."
+      "story": "On Thursday, 2026-07-23, ADANIENT.NS fell 4.37%. Everything the past knew said the day should end between -3.65% and +3.40%. It didn't. Volume ran at 0.8x normal, as if something was moving through the order book that nobody could see.\nThe record: a -4.37% day the model rated about 1 in 102.",
+      "story_source": "template (model failed the fact check)"
     },
     {
       "ticker": "ADANIENT.NS",
@@ -82,7 +86,8 @@
       "prev5_pct": 5.722389055722372,
       "close": 2859.10009765625,
       "klass": "Poltergeist",
-      "story": "The record: The stock, ADANIENT.NS, plummeted, a chillingly slow descent. The model predicted a \u20136.81% drop, but the actual movement was \u20139.76%, pushing the price below its previous 20-day average. The model\u2019s narrow range of 98% suggested an anomaly, far beyond its usual probabilistic calculations. Volume spiked \u201311.7x the 20-day average, a chaotic surge of activity.  The data seemed to correlate with a subtle, rhythmic fluctuation in the trading volume, as if something unseen was pushing the stock."
+      "story": "The candle flickered, a sickly yellow against the static chart \u2013 a grotesque spire of the Adanient building, its windows dark and watchful. The order book chilled, a glacial frost settling over the numbers. Then, the plummet. -9.76%. It rose from the depths of the chart, a viscous stain spreading across the 119th rung of the bell curve, a thing built of fractured probabilities. The air thickened, heavy with the scent of burnt ozone. The 20-day average volume surged, a frantic, desperate pulse \u2013 11.7 times its usual rhythm. The previous five days\u2019 return, +5.72%, seemed a distant, mocking echo. A tremor ran through the structure, the digital numbers twisting like tormented faces. The bell curve itself began to shudder, a silent scream contained within its icy embrace. \n\nThe record: ADANIENT.NS closed -9.76% on 2026-08-31, with a model\u2019s odds of approximately 1 in 119 for such a movement.",
+      "story_source": "gemma3:4b (attempt 1)"
     }
   ]
 }

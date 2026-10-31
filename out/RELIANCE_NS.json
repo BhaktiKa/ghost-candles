@@ -14,7 +14,7 @@
     "Ghosts (odds <= 1 in 100), oracle": 5,
     "Ghosts expected by pure chance": "6.7",
     "Ghosts by bell curve": 16,
-    "Story drafts rejected by fact check": "9 of 11"
+    "Story drafts rejected by fact check": "6 of 9"
   },
   "ghosts": [
     {
@@ -50,7 +50,7 @@
       "prev5_pct": 3.0059664338804226,
       "close": 1380.625732421875,
       "klass": "Poltergeist",
-      "story": "The candlestick of RELIANCE.NS pulsed with a sickly, green light, a silent, dreadful thing attempting to walk the chart. The lines of the order book grew icy, a glacial frost spreading across the digital floor. A chill, deeper than the June air, permeated the trading room. The numbers screamed.\n\nThe candles shifted, rearranged themselves into a grotesque imitation of a gothic mansion. Each wick, a desperate, flickering plea. The volume surged \u2013 3.2 times the normal flow, a torrent of unseen hands pulling at the market. The model, a cold, calculating eye, registered a result of -7.49%, a shadow cast far beyond its predicted -4.26% to +6.08% range. Its certainty, a haunting echo, placed the probability of such a movement at 1 in 327. The bell curve, a monstrous, vast thing, insisted the possibility was 1 in 158,551,461, yet the candlestick continued its unsettling advance. \n\nThe record: RELIANCE.NS closed -7.49% on 2024-06-04, with the forecasting model predicting an improbable 98% certainty of a move within the -4.26% to +6.08% range.",
+      "story": "The chart of RELIANCE.NS writhed, a gothic mansion constructed of flickering teal and charcoal. Each candle, a hesitant, spectral figure, attempted to walk the steps, but they dissolved into shadow with every hesitant stride. The order book chilled, the numbers freezing at -4.26% and +6.08%, a terrifying, incomplete loop. The air thickened, heavy with a dread that smelled of burnt paper and regret. \n\nThe volume surged, a tidal wave of 3.2x the normal flow, pushing against the walls of the spectral trading floor. The bell-curve model shivered, its probabilities collapsing \u2013 a single, terrible possibility, 1 in 327, materialized, then 1 in 158,551,461. A cold gust swept through, carrying whispers of impossible angles. The candles pulsed, a frantic, silent plea.\n\nThe record: RELIANCE.NS closed -7.49% on 2024-06-04, with a model\u2019s odds of such a movement being about 1 in 327.",
       "story_source": "gemma3:4b (attempt 1)"
     },
     {
@@ -86,8 +86,8 @@
       "prev5_pct": 2.1027378342611103,
       "close": 1500.6614990234375,
       "klass": "Poltergeist",
-      "story": "On Tuesday, 2026-01-06, RELIANCE.NS fell 4.47%. Everything the past knew said the day should end between -3.20% and +4.34%. It didn't. Volume ran at 3.5x normal, as if something was moving through the order book that nobody could see.\nThe record: a -4.47% day the model rated about 1 in 165.",
-      "story_source": "template (model failed the fact check)"
+      "story": "The chart of Reliance pulsed with a sickly green light, a crooked hallway stretching into an endless, shadowed depth. Each candle, a hesitant footfall, drifted from the order book \u2013 a vast, icy chamber where the numbers clung, frozen in a perpetual winter. The room smelled of damp ledger paper and something older, something\u2026wrong.\n\nA chill radiated from the data, the order book going utterly cold. The bell curve model, a grotesque imitation of certainty, shuddered with a silent scream. The green light intensified, revealing a fleeting impression of -4.47%. Then, a pressure, a weight, like a hand pressing down on the volume, a surge of 3.5x the usual flow. The air thickened with the ghost of a possibility, an impossible shadow across the screen. It felt like the model's logic, a fragile structure, had simply\u2026collapsed. \n\nThe record: On 2026-01-06, Reliance closed down 4.47%, a move that had an odds of about 1 in 165 according to the model.",
+      "story_source": "gemma3:4b (attempt 1)"
     },
     {
       "ticker": "RELIANCE.NS",
@@ -104,7 +104,7 @@
       "prev5_pct": 0.3550841499182302,
       "close": 1341.8956298828125,
       "klass": "Poltergeist",
-      "story": "The candlestick for Reliance.NS flickered into existence near the charting room\u2019s east window, a sickly yellow wax refusing to be still. The walls of the house \u2013 the chart \u2013 groaned with a low, insistent hum. Order books chilled, the numbers dissolving into frost as the closing bell struck. A gust of icy air, carrying the scent of ozone and old paper, swept through the room, pulling at the margins of the printouts. \n\nThe spectral candle shifted, its wicks twisting like frantic hands. The room plunged into darkness, then briefly illuminated by a single, pulsing green light \u2013 the model\u2019s projection, screaming \u201898%\u2019 before abruptly dying. The volume spiked, a chaotic 1.2x the usual, a frantic, desperate pulse. The ghostly candle surged, dropping -4.60% from its opening, a movement utterly impossible, a sliver of black in the perpetually dim light. The odds, a chilling 1 in 126, seemed a paltry explanation for the sheer, unsettling energy. \n\nThe record: Reliance.NS dropped -4.60% on 2026-03-27, with a model predicting a move of this magnitude having a probability of approximately 1 in 126.",
+      "story": "The charts of Reliance flickered, a skeletal house rising from the black. Each candlestick was a hesitant footstep, pacing the halls with a dreadful purpose. The order book chilled, a sudden frost creeping across its pages, numbers turning to ash. A low hum, a discordant chord, emanated from the screen, mirroring the frantic jittering of the data. \n\nThe walls of the trading room seemed to shift, the air thickening with a cold that clung to the skin. The digital displays pulsed with an unnerving green light, reflecting in the vacant eyes of the terminals. A pressure built, a silent scream trapped within the network. Then, the closing bell \u2013 a clang of metal echoing the collapse of reason. -4.60% it dropped. The model, a brittle construct of predictive algorithms, shuddered, its range a pathetic cage around a terror it couldn't comprehend. \n\nThe record: On 2026-03-27, Reliance.NS closed -4.60%, a movement with odds of about 1 in 126 according to the forecasting model.",
       "story_source": "gemma3:4b (attempt 1)"
     }
   ]
