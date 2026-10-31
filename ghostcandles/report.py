@@ -9,6 +9,17 @@ import pandas as pd
 
 W, H, PAD = 960, 260, 36
 
+# Ghost cards laid out landscape: facts on the left, story on the right, one card per row.
+# Stacks back to portrait on narrow (phone) screens. restyle.py injects this into old journals.
+LANDSCAPE_CSS = """<style id="landscape">
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+.card{display:grid;grid-template-columns:280px 1fr;grid-template-rows:auto auto 1fr;column-gap:28px;align-items:start;padding:20px 24px}
+.card>header,.card>.move,.card>dl{grid-column:1}
+.card>.story{grid-column:2;grid-row:1 / span 3;margin:0;font-size:15px;line-height:1.6;padding-left:24px;border-left:1px solid var(--line)}
+.card>dl{grid-template-columns:1fr 1fr}
+@media (max-width:700px){.card{grid-template-columns:1fr}.card>.story{grid-column:1;grid-row:auto;margin-top:12px;padding-left:0;border-left:0}}
+</style>"""
+
 
 def _x(i, n):
     return PAD + (W - 2 * PAD) * i / max(n - 1, 1)
@@ -59,8 +70,8 @@ def render(path, *, ticker, close, q, actual, ghosts, stats, oracle_name, medium
         <span class="klass">{g['klass']}</span></header>
       <div class="move {'down' if g['ret_pct'] < 0 else 'up'}">{g['ret_pct']:+.2f}%</div>
       <dl>
-        <div><dt>Oracle's 98% range</dt><dd>{g['lo_pct']:+.2f}% … {g['hi_pct']:+.2f}%</dd></div>
-        <div><dt>Oracle's odds</dt><dd>1 in {g['one_in_label']}</dd></div>
+        <div><dt>TabPFN's 98% range</dt><dd>{g['lo_pct']:+.2f}% … {g['hi_pct']:+.2f}%</dd></div>
+        <div><dt>TabPFN's odds</dt><dd>1 in {g['one_in_label']}</dd></div>
         <div><dt>Bell-curve odds</dt><dd>1 in {g['gauss_label']}</dd></div>
         <div><dt>Volume</dt><dd>{g['volume_ratio']:.1f}× normal</dd></div>
       </dl>
@@ -89,14 +100,14 @@ dl{{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;margin:8px 0;font:13
 .story{{font-style:italic;margin:12px 0 0}}table{{border-collapse:collapse;width:100%;font:14px system-ui}}
 td{{border-bottom:1px solid var(--line);padding:6px 4px}}td:last-child{{text-align:right}}
 footer{{margin-top:48px;color:var(--dim);font:13px system-ui}}
-</style></head><body><main>
+</style>{LANDSCAPE_CSS}</head><body><main>
 <h1>Ghost Candles</h1>
 <p class="sub">{html.escape(ticker)} · days the past could not explain · oracle: {html.escape(oracle_name)} · medium: {html.escape(medium_name)}</p>
 {_price_svg(close, ghosts)}
 <p class="note">Each glowing dot is a ghost candle. Click one to read its story.</p>
-<h2>What the oracle expected</h2>
+<h2>What the oracle (TabPFN) expected</h2>
 {_band_svg(q, actual, {g['date'] for g in ghosts})}
-<p class="note">Shaded: the oracle's 98% range for each day, forecast using only data from before that day. Dots: what actually happened.</p>
+<p class="note">Shaded: TabPFN's 98% range for each day, forecast using only data from before that day. Dots: what actually happened.</p>
 <h2>The ghosts</h2><div class="grid">{cards}</div>
 <h2>How honest is the oracle?</h2><table>{rows}</table>
 <footer>Ghost Candles is a storytelling tool, not trading advice. Stories are written by a local model that is
